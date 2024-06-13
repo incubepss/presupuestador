@@ -1,0 +1,85 @@
+.card {
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.10);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.card-content-center {
+    text-align: center;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card-list-item {
+    margin-bottom: 20px;
+    min-width: 48%;
+}
+.card-list:last-child {
+    margin-bottom: 0px;
+}
+.card-destacados {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.card .card-destacados h1 {
+    color: #fff;
+    border-radius: 50%;
+    min-width: 180px;
+    line-height: 180px;
+    margin-bottom: 20px;
+}
+.card h2 .badge,
+.card-list-item .badge {
+    padding: 7px 10px 5px;
+    font-size: 13px;
+    min-width: 35px;
+    text-transform: uppercase;
+
+}
+.card h1 {
+    margin: 0;
+    font-size: 100px;
+    color: #343434;
+}
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #343434;
+}
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 3em;
+    color: #343434;
+}
+.card h5 {
+    margin: 0 0 5px;
+    color: #343434;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.card h6 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-tag {
+    border-radius: 20px;
+    background: #f5f5f5;
+    padding: 20px;
+}
+@media (max-width: 767px) {
+    .card-list {
+        flex-direction: column;
+    }
+    .card-tag-sm {
+        margin-bottom: 20px;
+    }
+}

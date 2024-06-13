@@ -1,0 +1,266 @@
+.bafooter {
+  color: #fff;
+  padding: 60px 0;
+  background-color: #333333;
+  border-top: 3px solid #fcda59;
+  margin-top: 30px;
+}
+
+.footerrow {
+  margin-bottom: 20px;
+}
+
+.bafooter a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Logos */
+.containerba {
+  border-right: solid 1px #666;
+  padding: 10px 0;
+}
+
+.containerba .logofooter {
+  width: 120px;
+}
+
+/* contenedor redes */
+.containerredes {
+  margin: 0 auto;
+}
+
+/* contenedor ciudad */
+.containerciudad {
+  border-top: solid 1px #666;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+/* logo ciudad */
+.logofooterciudad {
+  max-width: none !important;
+  width: 255px;
+  height: auto;
+}
+
+.legales {
+  margin: 20px 0 0 0;
+  font-size: 12px;
+  color: #aaaaaa;
+  line-height: 1.5;
+}
+
+/* contenedor teléfonos */
+
+.listatelefonos {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.elementotelefonos {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+  margin-top: 0px;
+  width: 15%;
+}
+
+.elementotelefonos p {
+  margin: 12px 0 0 0;
+  line-height: 19px;
+}
+
+.telefonosutiles,
+.telefonosutiles:hover {
+  font-family: "OpenSans", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+/* social */
+
+.minisocial a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  margin-left: 30px;
+}
+.socialfb {
+  background-image: url(../../public/images/social/social-fb-w.png);
+  background-image: url(../../public/images/social/social-fb.svg), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+.socialtw {
+  background-image: url(../../public/images/social/social-tw-w.png);
+  background-image: url(../../public/images/social/social-tw.svg), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+.socialyt {
+  background-image: url(../../public/images/social/social-yt-w.png);
+  background-image: url(../../public/images/social/social-yt.svg), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+
+.socialrss {
+  background-image: url(../../public/images/social/social-rss-w.png);
+  background-image: url(../../public/images/social/social-rss.svg), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+
+.socialvp {
+  background-image: url(../../public/favicon.ico);
+  background-image: url(../../public/favicon.ico), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+  width: 27px !important;
+  height: 27px !important;
+}
+.socialin {
+  background-image: url(../../public/images/social/social-in-w.png);
+  background-image: url(../../public/images/social/social-in.svg), none;
+  background-size: cover;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+.socialfav {
+  float: right !important;
+  margin-right: 0 !important;
+  font-size: 40px;
+}
+.socialfav a {
+  color: #ccc;
+  text-indent: 0;
+}
+.socialfav a.active,
+.socialfav a.corazonLleno {
+  color: #d13f34;
+}
+.basocial {
+  display: table;
+  padding: 16px 0;
+}
+.basocial ul {
+  padding: 0;
+}
+.basocial li {
+  list-style: none;
+  float: left;
+  margin: 0 15px 16px 0;
+}
+.basocial li:last-child {
+  margin-right: 0;
+}
+.basocial a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
+}
+.bamedios a {
+  width: 90px;
+  height: 90px;
+}
+.footerrow .minisocial {
+  width: auto;
+}
+
+.minisocial {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.minisocial li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.minisocial a:hover,
+.minisocial a:focus,
+.ba-social a:hover,
+.ba-social a:focus {
+  opacity: 0.8;
+}
+
+.minisocial a:active,
+.ba-social a:active {
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .containerba .logofooter {
+    width: 70%;
+  }
+
+  .primera_columna {
+    padding-left: 15px;
+  }
+
+  .containerredes {
+    margin-top: 30px;
+  }
+
+  .listatelefonos {
+    padding: 20px 15px;
+    flex-direction: column;
+  }
+
+  .listatelefonos li {
+    margin-bottom: 25px;
+  }
+
+  .coltelefonos {
+    padding-top: 30px;
+  }
+
+  .elementotelefonos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .telefonosutiles {
+    margin: 0 15px 10px 0;
+  }
+
+  .elementotelefonos p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerrow .minisocial {
+    width: auto;
+    float: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .ba-social a {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 468px) {
+  .footer-nav {
+    text-align: center;
+  }
+}

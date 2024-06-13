@@ -1,0 +1,13 @@
+.breadcrumbBA {
+    background-color: #f9f9f9;
+    padding-top: 10px;
+}
+
+.breadcrumbBA a {  
+    color: #000 !important;
+    font-weight: 600 !important;
+  }
+
+.breadcrumbBA ol {
+    padding: 8px 15px 0 0;
+}

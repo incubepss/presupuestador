@@ -1,0 +1,7 @@
+.action-table-* :hover {
+  cursor: pointer;
+}
+
+.bordernone {
+  border: none;
+}

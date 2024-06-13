@@ -1,0 +1,631 @@
+/*  Tables
+    * ======================================================================= */
+
+.table > thead > tr > th {
+  border-color: #ccc;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  border-top: solid 1px #ccc;
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #efefef;
+  color: #000;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr > td.active:hover,
+.table-hover > tbody > tr > th.active:hover,
+.table-hover > tbody > tr.active:hover > td,
+.table-hover > tbody > tr.active:hover > th {
+  background-color: #efefef;
+}
+
+.table > thead > tr > td.primary,
+.table > tbody > tr > td.primary,
+.table > tfoot > tr > td.primary,
+.table > thead > tr > th.primary,
+.table > tbody > tr > th.primary,
+.table > tfoot > tr > th.primary,
+.table > thead > tr.primary > td,
+.table > tbody > tr.primary > td,
+.table > tfoot > tr.primary > td,
+.table > thead > tr.primary > th,
+.table > tbody > tr.primary > th,
+.table > tfoot > tr.primary > th {
+  background-color: #fdefaa;
+  color: #000;
+}
+
+.table-hover > tbody > tr > td.primary:hover,
+.table-hover > tbody > tr > th.primary:hover,
+.table-hover > tbody > tr.primary:hover > td,
+.table-hover > tbody > tr:hover > .primary,
+.table-hover > tbody > tr.primary:hover > th {
+  background-color: #fdefaa;
+  color: #000;
+}
+
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #eeefbe;
+  color: #000;
+}
+
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #f0f6df;
+}
+
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #d2f3f7;
+  color: #000000;
+}
+
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #e2f4f3;
+}
+
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #fae3c2;
+  color: #000;
+}
+
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #ffefde;
+}
+
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #fce0ec;
+  color: #000;
+}
+
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr:hover > .danger,
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #f8e2e1;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.label-table {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  margin: 0;
+  color: #000000;
+}
+
+.input-table {
+  background-color: #fff;
+  border: 0.5px solid #c5c3c2;
+  outline: 0.5px solid #c5c3c2;
+  width: 100%;
+  padding: 9px 10px;
+  height: 45px;
+}
+
+.input-table-cliente {
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  padding: 4px 16px;
+  height: 34px;
+}
+
+.input-table-db {
+  background-color: #f5f5f5;
+  border: 0.5px solid #c5c3c2;
+  outline: 0.5px solid #c5c3c2;
+  width: 100%;
+  padding: 9px 10px;
+  height: -webkit-fill-available;
+}
+
+.input-table-presupuesto {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 9px 10px;
+  height: 45px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.chalet-table {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+.semititle {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.subtitle-chalet {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: -0.5px;
+}
+
+.item-form {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-table-required {
+  border: 0.5px solid #fdd306;
+  outline: 0.5px solid #fdd306;
+  z-index: 2;
+}
+
+.input-radio {
+  width: 25px;
+  height: 25px;
+}
+
+.title-table {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px;
+  border: 0.5px solid #cccccc;
+  outline: 0.5px solid #cccccc;
+  width: 100%;
+}
+
+.title-table-borderless {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.input-big {
+  height: auto;
+}
+.input-big span {
+  font-family: "Chalet", "Open Sans", sans-serif !important;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  display: block;
+}
+.blur-editor {
+  width: 100vw;
+  height: 100%;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  opacity: 0.5;
+}
+
+.blur-editor-compartir {
+  width: 100vw;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  opacity: 0.5;
+}
+
+.blur-editor-cliente {
+  width: 100vw;
+  height: 100%;
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  opacity: 0.5;
+}
+
+.container-editor {
+  position: fixed;
+  border: 1px solid #cccccc;
+  width: 80vw;
+  min-height: 34vh;
+  left: 10vw;
+  top: 33vh;
+  background: #ffffff;
+  z-index: 30;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-editor-cliente {
+  position: absolute;
+  border: 1px solid #cccccc;
+  width: 380px;
+  height: auto;
+  min-height: 70vh;
+  left: calc(50% - (380px / 2));
+  top: 1vh;
+  z-index: 30;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-relative {
+  position: relative;
+  min-height: 600px;
+}
+
+.table-5,
+.table-8,
+.table-10,
+.table-12,
+.table-14,
+.table-15,
+.table-16,
+.table-18,
+.table-20,
+.table-22,
+.table-24,
+.table-25,
+.table-28,
+.table-30,
+.table-33,
+.table-35,
+.table-38,
+.table-40,
+.table-45,
+.table-48,
+.table-50,
+.table-55,
+.table-60,
+.table-70,
+.table-100 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  max-height: 70px;
+  min-height: 45px;
+}
+
+.table-5 {
+  width: 5%;
+}
+
+.table-8 {
+  width: 8%;
+}
+
+.table-10 {
+  width: 10%;
+}
+
+.table-12 {
+  width: 12%;
+}
+
+.table-14 {
+  width: 14%;
+}
+
+.table-15 {
+  width: 15%;
+}
+
+.table-16 {
+  width: 16%;
+}
+
+.table-18 {
+  width: 18%;
+}
+
+.table-20 {
+  width: 20%;
+}
+
+.table-28 {
+  width: 28%;
+}
+
+.table-22 {
+  width: 22%;
+}
+
+.table-24 {
+  width: 24%;
+}
+
+.table-25 {
+  width: 25%;
+}
+
+.table-30 {
+  width: 30%;
+}
+
+.table-33 {
+  width: 33%;
+}
+
+.table-35 {
+  width: 35%;
+}
+
+.table-38 {
+  width: 38%;
+}
+
+.table-40 {
+  width: 40%;
+}
+
+.table-45 {
+  width: 45%;
+}
+
+.table-48 {
+  width: 48%;
+}
+
+.table-50 {
+  width: 50%;
+}
+
+.table-20-db {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+  width: 20%;
+}
+
+.table-50-db {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  min-height: 45px;
+  width: 50%;
+}
+
+.table-55 {
+  width: 55%;
+}
+
+.table-60 {
+  width: 60%;
+}
+
+.table-70 {
+  width: 70%;
+}
+
+.table-95 {
+  width: 95%;
+}
+
+.table-100 {
+  width: 100%;
+}
+
+/* tablas 
+  -------------------------------------------------*/
+.table-bordered {
+  border: none;
+  margin-top: 20px;
+}
+
+.table > thead > tr > th {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #fdd306;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th {
+  border-color: #fdd306;
+}
+
+.react-bootstrap-table p {
+  margin: 0;
+}
+
+.table .selection-cell,
+.table .selection-cell-header {
+  text-align: center;
+}
+
+.table-borderless > thead > tr > th,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > tbody > tr > td,
+.table-borderless > tfoot > tr > td {
+  border: none !important;
+}
+
+.label-borderless {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.item-borderless {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.input-noedit {
+  background-color: #ffffff;
+  padding: 14px 16px;
+  width: 100%;
+  height: 47px;
+  border: none;
+  white-space: nowrap;
+}
+
+.over-hidden {
+  overflow: hidden;
+}
+
+.border-grey {
+  border: 1px solid #c5c3c2;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #c5c3c2;
+}
+
+.comentario {
+  height: 96px;
+}
+
+.comentario-p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-costo {
+  height: 200px;
+  width: 200px;
+}
+
+.scroll {
+  cursor: grab;
+  overflow: auto;
+}
+
+.input-big {
+  height: 95px;
+}
+.input-big span {
+  font-family: "Chalet", "Open Sans", sans-serif !important;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 45px;
+  display: block;
+}
+
+.input-table-ficha {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 9px 10px;
+  height: 45px;
+  line-height: 45px;
+  text-align: left;
+}

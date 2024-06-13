@@ -1,0 +1,184 @@
+.table-presupuestador {
+  background-color: #f5f5f5;
+}
+
+.table-presupuestador tr th {
+  background-color: #fff !important;
+  border: 1px solid rgb(204, 204, 204) !important;
+  border-bottom: 1px solid yellow !important;
+}
+
+.table-presupuestador tr th:nth-last-child(1) {
+  background-color: #fff !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+.table-presupuestador tr td:nth-last-child(1) {
+  background-color: #fff !important;
+  border-left: 1px solid transparent !important;
+  border-right: 1px solid transparent !important;
+  border-top: 1px solid transparent !important;
+  border-bottom: 1px solid transparent !important;
+  vertical-align: middle;
+}
+
+.table-add tr th {
+  visibility: hidden;
+  display: none;
+}
+
+.ReactTags__tags {
+  position: relative;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput {
+  padding-bottom: 10px;
+}
+
+.ReactTags__editInput {
+  border-radius: 1px;
+}
+
+.ReactTags__editTagInput {
+  display: inline-flex;
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tag {
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  color: #000000;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+.ReactTags__selected a.ReactTags__remove {
+  color: #000000;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Styles for suggestions */
+.ReactTags__suggestions {
+  position: absolute;
+}
+.ReactTags__suggestions ul {
+  list-style-type: none;
+  box-shadow: 0.05em 0.01em 0.5em rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 200px;
+}
+.ReactTags__suggestions li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0;
+}
+.ReactTags__suggestions li mark {
+  text-decoration: underline;
+  background: none;
+  font-weight: 600;
+}
+.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+  background: #b7cfe0;
+  cursor: pointer;
+}
+
+.ReactTags__remove {
+  border: none;
+  cursor: pointer;
+  background: none;
+  color: #000000;
+}
+
+
+.table-overflow {
+  overflow: auto;
+}
+.table-overflow-content {
+  min-width: 800px;
+}
+
+.ficha-tecnica {
+  font-size: 16px;
+  align-items: center;
+}
+.ficha-tecnica label {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 1em;
+  margin-bottom: 0;
+}
+.ficha-tecnica span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.card-capacidad-productiva .table-50 {
+  display: inline-block;
+  width: 40%;
+  max-height: none;
+  height: auto;
+}
+.card-capacidad-productiva .table-50 span {
+  font-size: 30px;
+}
+.capacidad-productiva-suma {
+  align-items: center;
+}
+.capacidad-productiva-suma span {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.capacidad-productiva-suma .input-big {
+  font-size: 12px;
+  height: auto;
+}
+.capacidad-productiva-suma .input-big span {
+  font-size: 24px;
+  line-height: 1em;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.info-tooltip {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.full-width-youtube-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.full-width-youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.presupusto-preview {
+  font-size: 25px;
+  position: relative;
+  top: 10px;
+  color: #333;
+}
+
+.flex-wrap { flex-wrap: wrap; }
+
+.label-redes {
+  font-size: 14px;
+  color: #000;
+  background: #fff;
+  margin-right: 10px;
+  white-space: nowrap;
+}

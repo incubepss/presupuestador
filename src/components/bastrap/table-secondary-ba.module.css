@@ -1,0 +1,28 @@
+.trSecondary {
+  background-color: #f5f5f5;
+  border-bottom: 10px solid white;
+}
+
+.text,
+.textBold {
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.textBold {
+  font-weight: 700;
+}
+
+.tdCifra {
+  font-family: "Chalet", "Open Sans", sans-serif;
+  font-size: 32px;
+  line-height: 54px;
+  letter-spacing: -0.5px;
+}
+
+.iTableSecondary span {
+  font-size: 30px;
+  color: #5f6b8c;
+}
