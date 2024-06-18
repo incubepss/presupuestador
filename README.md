@@ -64,7 +64,15 @@ docker build -t ghcr.io/incubepss/presupuestador:latest .
 docker push ghcr.io/incubepss/presupuestador:latest
 ```
 
-Login en caprover
+### Login en github packages
+
+
+```
+export CR_PAT=YOUR_TOKEN
+echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
+```
+
+### Login en caprover
 
 https://captain.nube.chasqui.site/
 
