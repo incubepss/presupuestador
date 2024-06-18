@@ -64,8 +64,15 @@ docker build -t ghcr.io/incubepss/presupuestador:latest .
 docker push ghcr.io/incubepss/presupuestador:latest
 ```
 
-### Login en github packages
+Se deben crear estas tres variables en secrets/actions de github
 
+- APP_NAME
+- APP_TOKEN
+- CAPROVER_SERVER
+
+Instrucciones: https://caprover.com/docs/ci-cd-integration/deploy-from-github.html
+
+### Login en github packages
 
 ```
 export CR_PAT=YOUR_TOKEN
