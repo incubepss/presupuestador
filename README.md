@@ -24,8 +24,8 @@ MONGODB_URI="mongodb://localhost:27017"
 NEXTAUTH_SECRET="d1491789d605b2195d0c7f4e1d43358caf667d7e37e8c96aea5d7c75928d0efc"
 NEXT_PUBLIC_COUCH_URI ="https://presupuestador-couch.nube.chasqui.site/"
 NEXTAUTH_URL="https://presupustador.enlaces.site/"
-NEXT_POUCH_USERNAME="[USERNAME]"
-NEXT_POUCH_PASSWORD="[PASSWORD]"
+NEXT_PUBLIC_POUCH_USERNAME="[USERNAME]"
+NEXT_PUBLIC_POUCH_PASSWORD="[PASSWORD]"
 
 ## Servidor de prueba de couchdb
 
@@ -64,8 +64,15 @@ docker build -t ghcr.io/incubepss/presupuestador:latest .
 docker push ghcr.io/incubepss/presupuestador:latest
 ```
 
-### Login en github packages
+Se deben crear estas tres variables en secrets/actions de github
 
+- APP_NAME
+- APP_TOKEN
+- CAPROVER_SERVER
+
+Instrucciones: https://caprover.com/docs/ci-cd-integration/deploy-from-github.html
+
+### Login en github packages
 
 ```
 export CR_PAT=YOUR_TOKEN
