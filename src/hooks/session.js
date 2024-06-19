@@ -2,6 +2,10 @@ import PouchDB from "pouchdb";
 import { signIn } from "next-auth/react";
 
 const pouchRemote = process.env.NEXT_PUBLIC_COUCH_URI;
+const auth = {
+  username: process.env.NEXT_PUBLIC_POUCH_USERNAME,
+  password: process.env.NEXT_PUBLIC_POUCH_PASSWORD,
+};
 
 export function formatUserDoc(email) {
   var db = email;
@@ -13,12 +17,7 @@ export async function set_usuario(user) {
   // Registra nuevo usuario en la base remota
   var userDoc = formatUserDoc(user.email);
   //const remoteUserDB = new PouchDB(remote + 'usuarios');
-  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", {
-    auth: {
-      username: process.env.NEXT_POUCH_USERNAME,
-      password: process.env.NEXT_POUCH_PASSWORD,
-    },
-  });
+  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", { auth });
   remoteUserDB.put({ ...user, _id: userDoc });
 }
 
@@ -44,12 +43,7 @@ export async function GetUserStatus(email, emailExist) {
     });
     return;
   }
-  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", {
-    auth: {
-      username: "admin",
-      password: "admin",
-    },
-  });
+  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", { auth });
   remoteUserDB
     .get(formatUserDoc(email))
     .then((success) => {
@@ -66,12 +60,7 @@ export async function GetUserStatus(email, emailExist) {
 }
 
 export async function get_usuario(email, setEmailError) {
-  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", {
-    auth: {
-      username: "admin",
-      password: "admin",
-    },
-  });
+  const remoteUserDB = new PouchDB(pouchRemote + "usuarios", { auth });
   remoteUserDB
     .get(formatUserDoc(email))
     .then((success) => {
@@ -112,12 +101,7 @@ export async function setup_session(localDB, session) {
       id: formatUserDoc(email),
     };
     set_usuario(user);
-    const remoteDB = new PouchDB(process.env.NEXT_PUBLIC_COUCH_URI + user.id, {
-      auth: {
-        username: "admin",
-        password: "admin",
-      },
-    });
+    const remoteDB = new PouchDB(process.env.NEXT_PUBLIC_COUCH_URI + user.id, { auth });
     localDB.sync(remoteDB, { live: true, retry: true });
   }
 }
