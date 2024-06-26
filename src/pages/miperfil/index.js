@@ -5,6 +5,7 @@ import { usePouch } from "use-pouchdb";
 import { useSession } from "next-auth/react";
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 import NumberFormat from "react-number-format";
+import { useRouter } from "next/router";
 import Layout from "../../components/layout";
 import Costos from "../../components/perfil/Costos";
 import Pasos from "../../components/perfil/Pasos";
@@ -32,7 +33,7 @@ export default function MiPerfil() {
   const { data: session } = useSession();
 
   const db = usePouch();
-
+  const router = useRouter();
   const { sentData, index } = useContext(PresupuestosContext);
   const localDB = new PouchDB("dbPresupuestos");
 
@@ -198,6 +199,12 @@ export default function MiPerfil() {
   useEffect(() => {
     setup_session(localDB, session);
   }, [session]);
+
+  useEffect(() => {
+    if (!isLoadingDatos && misDatos.length === 0) {
+      router.push("/");
+    }
+  }, [misDatos]);
 
   useEffect(() => {
     findInDatabase(db, "presupuesto", setMisPresupuestos, setIsLoading);
