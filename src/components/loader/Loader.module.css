@@ -24,26 +24,26 @@
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  background: #fdd306;
+  background: #FF9F24;
   background: -moz-linear-gradient(
     left,
-    #fdd306 10%,
+    #FF9F24 10%,
     rgba(255, 255, 255, 0) 42%
   );
   background: -webkit-linear-gradient(
     left,
-    #fdd306 10%,
+    #FF9F24 10%,
     rgba(255, 255, 255, 0) 42%
   );
-  background: -o-linear-gradient(left, #fdd306 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #FF9F24 10%, rgba(255, 255, 255, 0) 42%);
   background: -ms-linear-gradient(
     left,
-    #fdd306 10%,
+    #FF9F24 10%,
     rgba(255, 255, 255, 0) 42%
   );
   background: linear-gradient(
     to right,
-    #fdd306 10%,
+    #FF9F24 10%,
     rgba(255, 255, 255, 0) 42%
   );
   position: relative;
@@ -56,7 +56,7 @@
 .loader:before {
   width: 50%;
   height: 50%;
-  background: #fdd306;
+  background: #FF9F24;
   border-radius: 100% 0 0 0;
   position: absolute;
   top: 0;

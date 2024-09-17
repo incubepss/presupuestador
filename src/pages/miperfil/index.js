@@ -110,7 +110,7 @@ export default function MiPerfil() {
       "#0389D1",
       "#9D6DB6",
       "#F562A2",
-      //"#FCDA59",
+      //"#FF9F24",
       "#E76056",
       "#19C3E3",
     ];

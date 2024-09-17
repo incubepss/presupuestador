@@ -8,24 +8,7 @@
 
 /*@import url("fonts.css");*/
 
-/*  OpenSans
-  * ======================================================================= */
-
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
-
-/*  Chalet
-  * ======================================================================= */
-
-  @font-face {
-    font-family: "Chalet";
-    src: url("fonts/CHANEWEI.eot");
-    src: url("fonts/CHANEWEI.eot?#iefix") format("embedded-opentype"), 
-        url("fonts/CHANEWEI.svg#Gotham") format("svg"), 
-        url("fonts/CHANEWEI.woff") format("woff"), 
-        url("fonts/CHANEWEI.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal; 
-  }
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 /*  Bootstrap Icons
   * ======================================================================= */
@@ -172,7 +155,6 @@ hr {
 .panel-title,
 .btn,
 .navbar-brand {
-  font-family: "Chalet", "Open Sans", sans-serif;
   letter-spacing: -0.3px;
 }
 
@@ -204,19 +186,15 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
-  font-family: "Chalet", "Open Sans", sans-serif;
-  letter-spacing: -0.5px;
-}
-
+.h3,
 h4,
 .h4,
 h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Open Sans", sans-serif !important;
-  font-weight: 700;
+  font-family: "Basic", system-ui !important;
+  font-weight: 400;
 }
 
 @media (max-width: 767px) {
@@ -250,19 +228,19 @@ body,
 .alert-link p,
 .list-group blockquote p,
 .jumbotron p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-weight: 400;
 }
 
 span strong,
 thead > tr > th,
 .progress-bar {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-weight: 700;
 }
 
 .lead {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-weight: 400;
 }
 
@@ -271,12 +249,12 @@ thead > tr > th,
 
 b,
 p strong {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-weight: 700;
 }
 
 .title-home {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -296,7 +274,7 @@ p strong {
 }
 
 .p-home {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -308,7 +286,7 @@ p strong {
 }
 
 .p-wizard {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -317,7 +295,7 @@ p strong {
 }
 
 .control-label {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Karla", system-ui, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -351,7 +329,6 @@ p strong {
 }
 
 .bajadas {
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 34px;
@@ -361,7 +338,6 @@ p strong {
 }
 
 .bajadas-heavy {
-  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 34px;
@@ -370,7 +346,6 @@ p strong {
 }
 
 .example-title {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
@@ -379,7 +354,6 @@ p strong {
 }
 
 .example-text {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -388,7 +362,6 @@ p strong {
 }
 
 .small-clarify {
-  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 400;
   line-height: 15px;
@@ -415,7 +388,6 @@ p strong {
   }
 
   .p-wizard {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -486,7 +458,6 @@ input[type="checkbox"]:focus {
 }
 
 .link-menu-header {
-  font-family: "Chalet", "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 15px;
@@ -518,8 +489,6 @@ blockquote {
 blockquote p {
   font-size: 24px;
   line-height: 32px;
-
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -533,7 +502,6 @@ blockquote .small {
     * ======================================================================= */
 
 dt {
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -553,7 +521,6 @@ pre {
     * ======================================================================= */
 
 label {
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -569,7 +536,6 @@ label {
 .input-xl {
   height: 52px;
   font-size: 20px;
-  font-family: "Chalet", "Open Sans", sans-serif;
   letter-spacing: -0.3px;
 }
 
@@ -829,8 +795,8 @@ label {
 .btn-primary.disabled,
 .btn-primary[disabled],
 .btn-primary:visited {
-  background-color: #fcda59;
-  border-color: #fcda59;
+  background-color: #FF9F24;
+  border-color: #FF9F24;
   color: #685723;
   box-shadow: none;
 }
@@ -1238,7 +1204,6 @@ a.alert-spot:active {
 
 .alert-spot p {
   margin-bottom: 0;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1250,7 +1215,7 @@ a.alert-spot:active {
 }
 
 .alert-spot-primary {
-  background-color: #fdd306;
+  background-color: #FF9F24;
   color: #5f4600;
 }
 
@@ -1354,7 +1319,6 @@ a.alert-spot:active {
 
 .footer-row ul li a {
   color: #888;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
@@ -1760,7 +1724,6 @@ a.list-group-item.active > .badge {
   position: relative;
   top: 6px;
   color: #292202;
-  font-family: "Chalet", "Open Sans", sans-serif;
 }
 
 .navbar-top ul.sub-brand li:first-child {
@@ -1775,7 +1738,6 @@ a.list-group-item.active > .badge {
   }
 }
 .navbar-top .navbar-brand {
-  font-family: "Chalet", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -1999,7 +1961,7 @@ a.list-group-item.active > .badge {
 .navbar-primary .nav .open > a:hover,
 .navbar-primary a.navbar-brand:focus,
 .navbar-primary a.navbar-brand:hover {
-  background-color: #fdd306;
+  background-color: #FF9F24;
   color: #292202;
   opacity: 0.6;
 }
@@ -2007,7 +1969,7 @@ a.list-group-item.active > .badge {
 .navbar-primary {
   border: 0;
   background-color: #ffffff;
-  border-bottom: 3px solid #fdd306;
+  border-bottom: 3px solid #FF9F24;
 }
 /*}*/
 
@@ -2022,7 +1984,7 @@ a.list-group-item.active > .badge {
 .navbar-primary a.navbar-brand.active,
 .navbar-primary a.navbar-brand.active:focus,
 .navbar-primary a.navbar-brand.active:hover {
-  background-color: #fdd306;
+  background-color: #FF9F24;
   color: #fff;
 }
 
@@ -2279,7 +2241,6 @@ a.list-group-item.active > .badge {
 }
 
 .jumbotron > .carousel p {
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.42857143;
@@ -2419,7 +2380,7 @@ a.list-group-item:focus p {
 }
 
 .list-heading-primary {
-  background-color: #fdd306;
+  background-color: #FF9F24;
 }
 
 .list-heading-success {
@@ -3014,7 +2975,6 @@ a.list-group-item-danger:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Chalet", "Open Sans", sans-serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 58px;
@@ -3115,7 +3075,7 @@ a.list-group-item-danger:hover {
 
 .alert-primary,
 .bg-primary {
-  background-color: #fdd306;
+  background-color: #FF9F24;
 }
 
 .alert-primary,
@@ -3180,12 +3140,12 @@ a.list-group-item-danger:hover {
 
 .text-primary,
 .text-primary a {
-  color: #fdd306;
+  color: #FF9F24;
 }
 
 .text-success,
 .text-success a {
-  color: #18b596;
+  color: #48B8E7;
 }
 
 .text-info,
@@ -3277,20 +3237,11 @@ a.thumbnail.active,
 }
 
 .link-header {
-  font-family: "Chalet", "Open Sans", sans-serif;
-
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #000000;
-}
-
-.bac-footer {
-  width: 255px;
-  height: 45px;
-  background-image: url(images/logo-bac.png);
-  background-image: url(images/logo-bac.svg), none;
 }
 
 /*  Sidebar
@@ -3338,7 +3289,6 @@ a.thumbnail.active,
   display: block;
 
   color: #888;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -3354,7 +3304,6 @@ a.thumbnail.active,
 .sidebar .nav > .active:hover > a,
 .sidebar .nav > .active:focus > a {
   color: #000;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border-left: 2px solid #19c3e3;
 }
@@ -3379,7 +3328,6 @@ a.thumbnail.active,
   padding-bottom: 3px;
   padding-left: 30px;
   font-size: 12px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   padding-left: 45px;
 }
@@ -3395,12 +3343,6 @@ a.thumbnail.active,
 
 a {
   text-decoration: none;
-}
-.sidebar .nav .nav > .active > a,
-.sidebar .nav .nav > .active:hover > a,
-.sidebar .nav .nav > .active:focus > a {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
 }
 
 .sidebar .nav .nav > li {
@@ -3426,7 +3368,6 @@ a {
   .sidebar .nav > .active > a,
   .sidebar .nav > .active > a:hover {
     color: #aaa;
-    font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
 
@@ -3467,7 +3408,6 @@ a,
 .badge {
   background-color: #aaa;
   position: relative;
-  font-family: "Chalet", "Open Sans", sans-serif;
   margin: 5px;
   font-weight: 500;
   padding: 7px 35px;
@@ -3536,7 +3476,7 @@ noscript.how-to .alert-spot {
 .link-menu-header a:focus,
 .link-menu-header a:active,
 .active-link-header a {
-  border-bottom: 4px solid #fdd306;
+  border-bottom: 4px solid #FF9F24;
 }
 
 .navbar-nav > li > a {
@@ -3648,7 +3588,7 @@ noscript.how-to .alert-spot {
 /* perfil
   -------------------------------------------------*/
 .banner {
-  background: #18b596;
+  background: #48B8E7;
   height: 227px;
   width: 100%;
 }
@@ -3683,7 +3623,6 @@ noscript.how-to .alert-spot {
   width: 110px;
   border-radius: 20px;
   padding: 5px 0px;
-  font-family: "Chalet", "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
@@ -3700,7 +3639,6 @@ noscript.how-to .alert-spot {
 }
 
 .paso-text {
-  font-family: "Chalet", "Open Sans", sans-serif !important;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -3716,7 +3654,6 @@ noscript.how-to .alert-spot {
 }
 
 .italic-print {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-style: italic;
   font-weight: 600;
@@ -3729,7 +3666,6 @@ noscript.how-to .alert-spot {
 }
 
 .label-bold-print {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold !important;
   line-height: 25px;
@@ -3797,14 +3733,12 @@ img.image-perfil {
   font-weight: 400;
   font-size: 22px;
   line-height: 30px;
-  font-family: "Chalet", "Open Sans", sans-serif !important;
   padding: 20px;
   text-align: end;
   margin-bottom: 10px;
 }
 
 .important-ficha {
-  font-family: "Chalet", "Open Sans", sans-serif !important;
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
@@ -3870,7 +3804,6 @@ img.image-perfil {
 }
 
 .text-print {
-  font-family: "Open Sans", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 54px;

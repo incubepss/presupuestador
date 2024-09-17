@@ -17,6 +17,7 @@ export default function HeaderBA() {
           <div className={styles.colflexHeader}>
             <Link href={userData?._id ? "/miperfil" : "/"}>
               <a className={styles.colflexHeaderLogo}>
+                <img src="/images/logos/logo.png" alt="logo enlaces"/>
                 <h2>Presupuestador</h2>
               </a>
             </Link>

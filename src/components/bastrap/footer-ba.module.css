@@ -2,7 +2,7 @@
   color: #fff;
   padding: 60px 0;
   background-color: #333333;
-  border-top: 3px solid #fcda59;
+  border-top: 3px solid #FF9F24;
   margin-top: 30px;
 }
 
@@ -85,55 +85,7 @@
 
 /* social */
 
-.minisocial a {
-  width: 25px;
-  height: 25px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: -9999px;
-  margin-left: 30px;
-}
-.socialfb {
-  background-image: url(../../public/images/social/social-fb-w.png);
-  background-image: url(../../public/images/social/social-fb.svg), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-}
-.socialtw {
-  background-image: url(../../public/images/social/social-tw-w.png);
-  background-image: url(../../public/images/social/social-tw.svg), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-}
-.socialyt {
-  background-image: url(../../public/images/social/social-yt-w.png);
-  background-image: url(../../public/images/social/social-yt.svg), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-}
 
-.socialrss {
-  background-image: url(../../public/images/social/social-rss-w.png);
-  background-image: url(../../public/images/social/social-rss.svg), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-}
-
-.socialvp {
-  background-image: url(../../public/favicon.ico);
-  background-image: url(../../public/favicon.ico), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-  width: 27px !important;
-  height: 27px !important;
-}
-.socialin {
-  background-image: url(../../public/images/social/social-in-w.png);
-  background-image: url(../../public/images/social/social-in.svg), none;
-  background-size: cover;
-  /*-ms-behavior: url(../css/backgroundsize.min.htc);*/
-}
 .socialfav {
   float: right !important;
   margin-right: 0 !important;
