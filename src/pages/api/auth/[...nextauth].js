@@ -16,7 +16,7 @@ function html(params) {
   const escapedHost = host.replace(/\./g, "&#8203;.");
 
   // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-  const brandColor = "#fcda59";
+  const brandColor = "#FF9F24";
   // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
   const buttonText = theme.buttonText || "#fff";
 
@@ -24,8 +24,8 @@ function html(params) {
     background: "#f9f9f9",
     text: "#444",
     mainBackground: "#fff",
-    buttonBackground: "#fcda59",
-    buttonBorder: "#fcda59",
+    buttonBackground: "#FF9F24",
+    buttonBorder: "#FF9F24",
     buttonText: "#000",
   };
 

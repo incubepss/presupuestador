@@ -10,6 +10,7 @@
     "name": "Wow",
     "email": "hola@proyectowow.com.ar"
   },
+  "license": "GPL-3.0-only",
   "private": true,
   "scripts": {
     "dev": "next",

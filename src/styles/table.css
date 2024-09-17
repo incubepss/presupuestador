@@ -250,8 +250,8 @@
 }
 
 .input-table-required {
-  border: 0.5px solid #fdd306;
-  outline: 0.5px solid #fdd306;
+  border: 0.5px solid #FF9F24;
+  outline: 0.5px solid #FF9F24;
   z-index: 2;
 }
 
@@ -518,7 +518,7 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #fdd306;
+  border-bottom: 1px solid #FF9F24;
   padding-bottom: 8px;
   text-transform: uppercase;
 }
@@ -527,7 +527,7 @@
 .table-bordered > tbody > tr > th,
 .table-bordered > tfoot > tr > td,
 .table-bordered > tfoot > tr > th {
-  border-color: #fdd306;
+  border-color: #FF9F24;
 }
 
 .react-bootstrap-table p {
